@@ -12,19 +12,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
+    <header class="home">
         <div class="rail"></div>
         <div class="navbar">
             <a href="#" class="logo"><img src="./img/logo.svg" alt="logo"></a>
             <ul class="menu-list">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="./pages/company.html">Company</a></li>
-                <li><a href="./pages/service.html">services</a></li>
-                <li><a href="./pages/projects.html">gallery</a></li>
+                <li class="active"><a href="#">Accueil</a></li>
+                <li><a href="./pages/company.html">Le cabinet</a></li>
+                <li><a href="./pages/service.html">Nos services</a></li>
+                <li><a href="./pages/projects.html">Galerie photos</a></li>
                 <li><a href="./pages/contact.html">Contact</a></li>
             </ul>
             <a href="tel:0656716530" class="tel"><i class="fa-solid fa-phone"></i>+212 656 716 530</a>
@@ -32,11 +33,11 @@
             <nav class="navbar-mobile">
                 <button class="close"><i class="fa-solid fa-xmark"></i></button>
                 <ul class="menu">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="./pages/company.html">Company</a></li>
-                    <li><a href="./pages/service.html">services</a></li>
-                    <li><a href="./pages/projects.html">gallery</a></li>
-                    <li><a href="./pages/contact.html">Contact</a></li>
+                    <li class="active"><a href="#">Accueil</a></li>
+                <li><a href="./pages/company.html">Le cabinet</a></li>
+                <li><a href="./pages/service.html">Nos services</a></li>
+                <li><a href="./pages/projects.html">Galerie photos</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -61,11 +62,11 @@
                 </div>
                 <div class="slideshow-text">
                     <div class="item">
-                        <h1>Provide effective Dental Solutions</h1>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nihil sunt alias velit, ut fuga quo, numquam optio, incidunt ea facilis excepturi accusamus quod nulla? Fuga non impedit voluptatem beatae?</span>
-                        <div class="btn-group">
-                            <a href="#" role="button" class="btn">Contact us <i class="fa-solid fa-phone-flip"></i></a>
-                            <a href="#" role="button" class="btn">Our services <i class="fa-solid fa-arrow-right-long"></i></a>
+                        <h1 data-aos="fade-right" data-aos-duration="1500">Fournir des solutions dentaires efficaces</h1>
+                        <span data-aos="fade-left" data-aos-duration="1000">"Un sourire éclatant, une vie radieuse chez SENDENTIST. <br> Votre sourire, notre priorité</span>
+                        <div class="btn-group" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="./pages/contact.html" role="button" class="btn">Contactez-nous<i class="fa-solid fa-phone-flip"></i></a>
+                            <a href="./pages/service.html" role="button" class="btn">Nos services<i class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
                     </div>
                 </div>
@@ -76,137 +77,136 @@
     <main>
         <section id="accroche">
             <div class="twin">
-                <div class="item">
+                <div class="item" data-aos="fade-up" data-aos-duration="1000">
                     <span><i class="fa-solid fa-tooth"></i></span>
                     <div class="twin-contact">
-                        <b>Teeth Whitening</b>
-                        <span>Distinctively re-engineer revolutionary meta-services and premium architectures.</span>
+                        <b>Blanchiment</b>
+                        <span>Le blanchiment des dents est une procédure cosmétique non invasive visant à éclaircir la teinte des dents pour un sourire plus éclatant et confiant.</span>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" data-aos="fade-up" data-aos-duration="1000">
                     <span><i class="fa-solid fa-face-grimace"></i></span>
                     <div class="twin-contact">
-                        <b>Dental Services</b>
-                        <span>Globally harness multimedia based collaboration and idea haring with backend products.</span>
+                        <b>Services dentaires</b>
+                        <span>Soins de prévention, les restaurations, les nettoyages et les traitements orthodontiques pour maintenir une bonne santé bucco-dentaire.</span>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" data-aos="fade-up" data-aos-duration="1000">
                     <span><i class="fa-solid fa-teeth-open"></i></span>
                     <div class="twin-contact">
-                        <b>Dental Implants</b>
-                        <span>Dramatically disseminate standardized metrics after resource-leveling processes.</span>
+                        <b>Implants dentaires</b>
+                        <span>Les implants dentaires sont des racines artificielles en titane utilisées pour remplacer les dents manquantes de manière permanente et naturelle.</span>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" data-aos="fade-up" data-aos-duration="1000">
                     <span><i class="fa-solid fa-user-doctor"></i></span>
                     <div class="twin-contact">
-                        <b>Surgery</b>
-                        <span>Proactively fabricate one-to-one materials via effective e-business services processes.</span>
+                        <b>Chirurgie dentaire</b>
+                        <span>La chirurgie dentaire traite les problèmes complexes tels que l'extraction des dents de sagesse et les greffes osseuses.</span>
                     </div>
                 </div>
             </div>
         </section>
         <section id="about">
             <div class="container">
-                <div class="title">
-                    <span>About us</span>
-                    <h2>Who we are ?</h2>
-                    <p>We are a team of dentists, hygienists and receptionists who work together to ensure that you receive the best treatment that you require at a very time that suits you.</p>
+                <div class="title" data-aos="fade-right" data-aos-duration="1000">
+                    <span>A propos de nous</span>
+                    <h2>Qui sommes-nous ?</h2>
                 </div>
-                <div class="content">
-                    <ul>
-                        <li>Dental Services</li>
-                        <li>Teeth Whitening</li>
-                        <li>Surgery</li>
-                        <li>Dental Implaning</li>
-                    </ul>
+                <div class="content" data-aos="fade-right" data-aos-duration="1000">
+                    <p>Notre Cabinet se compose de 2 praticiens avec expérience, diplômés de prestigieuses universités étrangères, d'assistantes et secrétaires polyvalentes dans la gestion technique et administrative et d'une prothèsiste diplômée et experimentée qui ne prend en charge que nos patients.</p>
+                    <p>Nous nous efforçons dans notre organisation de prendre en charge nos patients à l'heure du rdv et de leur reserver pour chaque acte le temps nécéssaire pour un soin optimal.</p>
+                    <p>Chaque patient est pris en charge de manière personnalisée de sorte à répondre à ses exigences et besoins, d'établir des plans de traitement adaptés et d'assurer une maintenance une fois les soins effectués.</p>
+                    <p>Nous appliquons une attention particulière pour que les soins se fassent sans douleurs !</p>
                 </div>
-                <div class="jumbotron">
-                    <i class="fa-solid fa-lightbulb"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi hic dolores rem ab dolorum perferendis nulla consectetur suscipit totam aspernatur, amet pariatur, error veritatis. Explicabo eum alias impedit id consectetur.</p>
-                </div>
+                <br>
+                <a href="#" class="btn btn-more">Lire la suite +</a>
             </div>
-            <div class="img-bloc">
+            <div class="img-bloc" data-aos="fade-left" data-aos-duration="1000">
                 <img src="./img/home.jpg" alt="Image">
             </div>
         </section>
         <section id="services">
-            <div class="title">
-                <span>Our services</span>
-                <h2>High quality constructions solutions for residentials & industries !</h2>
+            <div class="title" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Nos services</span>
+                <h2>Des traitements et services de haute qualité !</h2>
             </div>
             <div class="container">
-                <div class="item-service">
+                <div class="item-service" data-aos="fade-up" data-aos-duration="1000">
                     <div class="heading">
                         <i class="fa-solid fa-trowel-bricks"></i>
-                        <h3>General Dentistry</h3>
+                        <h3>Soins de prévention</h3>
                     </div>
-                    <p>Competently parallel task researched data process. Leverage other resource leveling convergence data. Engage fully tested process top line platform clients.</p>
-                    <a href="#" class="btn btn-more">See more</a>
+                    <p>Cela inclut les nettoyages réguliers, les examens dentaires et les conseils en matière d'hygiène bucco-dentaire pour maintenir une bouche saine.</p>
+                    <a href="#" class="btn btn-more">Lire +</a>
                 </div>
-                <div class="item-service">
+                <div class="item-service" data-aos="fade-up" data-aos-duration="1000">
                     <div class="heading">
                         <i class="fa-solid fa-user-tie"></i>
-                        <h3>Alignment</h3>
+                        <h3>Restaurations dentaires</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut, impedit consequuntur odio laudantium eos illo pariatur fuga nulla porro?</p>
-                    <a href="#" class="btn btn-more">Read more</a>
+                    <p>Le cabinet réalise des obturations dentaires, des couronnes, des bridges et des prothèses pour réparer les dents endommagées ou manquantes.</p>
+                    <a href="#" class="btn btn-more">Lire +</a>
                 </div>
-                <div class="item-service">
+                <div class="item-service" data-aos="fade-up" data-aos-duration="1000">
                     <div class="heading">
                         <i class="fa-solid fa-ruler-combined"></i>
-                        <h3>Dental Surgery</h3>
+                        <h3>Traitements d'orthodontie</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut, impedit consequuntur odio laudantium eos illo pariatur fuga nulla porro?</p>
-                    <a href="#" class="btn btn-more">Read more</a>
+                    <p>L'installation de dispositifs d'alignement des dents, comme les appareils orthodontiques, pour corriger les problèmes de positionnement des dents.</p>
+                    <a href="#" class="btn btn-more">Lire +</a>
                 </div>
             </div>
         </section>
         <section id="hero">
             <div class="container">
-                <div class="title">
-                    <span>A Perfect Smile Guaranteed</span>
-                    <h2>A team of dentists working to ensure you receive the best treatment.</h2>
+                <div class="title" data-aos="fade-right" data-aos-duration="1000">
+                    <h2>Un sourire parfait garanti</h2>
                 </div>
-                <p>Efficiently enable enabled sources and cost effective products. Completely synthesize principle-centered information after ethical communities. Efficiently innovate open-source infrastructures via inexpensive materials.</p>
+                <p data-aos="fade-left" data-aos-duration="1000">Une équipe de dentistes qui travaillent pour vous assurer de recevoir le meilleur traitement.</p>
+                <p data-aos="fade-left" data-aos-duration="1000">
+                    Activez efficacement les sources activées et les produits rentables. 
+                    Synthétiser complètement l’information centrée sur les principes après les communautés éthiques. 
+                    Innover efficacement les infrastructures open source via des matériaux peu coûteux.
+                </p>
                 <div class="twin">
-                    <div class="item">
+                    <div class="item" data-aos="fade-up" data-aos-duration="1000">
                         <span><i class="fa-regular fa-envelope"></i></span>
                         <div class="twin-contact">
-                            <b>Full protection</b>
-                            <p>Competently parallel task researched data and process improvements.</p>
+                            <b>Protection complète</b>
+                            <p>Tâches parallèles compétentes Amélioration des traitements et des processus.</p>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" data-aos="fade-up" data-aos-duration="1000">
                         <span><i class="fa-solid fa-location-dot"></i></span>
                         <div class="twin-contact">
-                            <b>Complete service</b>
-                            <p>Collaboratively expedite quality products via client focused results.</p>
+                            <b>Service complète</b>
+                            <p>Accélérer en collaboration de qualité grâce à des résultats axés sur le client.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="img-bloc">
+            <div class="img-bloc" data-aos="fade-left" data-aos-duration="1000">
                 <img src="./img/gg.jpg" alt="Image">
             </div>
         </section>
         <section id="recent">
-            <div class="title">
-                <span>Our local</span>
-                <h2>Gallery</h2>
+            <div class="title" data-aos="zoom-in" data-aos-duration="1000">
+                <span>le cabinet</span>
+                <h2>Galerie photos</h2>
             </div>
             <div class="container">
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-duration="1000">
                     <div class="img">
                         <img src="./img/galerie/g-1.jpg" alt="Image">
                     </div>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-duration="1000">
                     <div class="img">
                         <img src="./img/galerie/g-2.jpg" alt="Image">
                     </div>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-duration="1000">
                     <div class="img">
                         <img src="./img/galerie/g-3.jpg" alt="Image">
                     </div>
@@ -214,55 +214,63 @@
             </div>
         </section>
         <section id="marques">
-            <div class="img-logo">
+            <div class="img-logo" data-aos="zoom-in" data-aos-duration="1000">
                 <img src="./assets/marques/1.svg" alt="marque">
             </div>
-            <div class="img-logo">
+            <div class="img-logo" data-aos="zoom-in" data-aos-duration="1000">
                 <img src="./assets/marques/2.svg" alt="marque">
             </div>
-            <div class="img-logo">
+            <div class="img-logo" data-aos="zoom-in" data-aos-duration="1000">
                 <img src="./assets/marques/3.svg" alt="marque">
             </div>
-            <div class="img-logo">
+            <div class="img-logo" data-aos="zoom-in" data-aos-duration="1000">
                 <img src="./assets/marques/4.svg" alt="marque">
             </div>
-            <div class="img-logo">
+            <div class="img-logo" data-aos="zoom-in" data-aos-duration="1000">
                 <img src="./assets/marques/5.svg" alt="marque">
             </div>
-            <div class="img-logo">
+            <div class="img-logo" data-aos="zoom-in" data-aos-duration="1000">
                 <img src="./assets/marques/6.svg" alt="marque">
             </div>
-            <div class="img-logo">
+            <div class="img-logo" data-aos="zoom-in" data-aos-duration="1000">
                 <img src="./assets/marques/7.svg" alt="marque">
             </div>
-            <div class="img-logo">
+            <div class="img-logo" data-aos="zoom-in" data-aos-duration="1000">
                 <img src="./assets/marques/8.svg" alt="marque">
             </div>
         </section>
         <section id="contact">
-            <div class="title">
-                <span>Dental Excellence,</span>
-                <h2>Great Smiles</h2>
+            <div class="title" data-aos="fade-right" data-aos-duration="1000">
+                <span>Sendentist,</span>
+                <h2>Magnifique sourire !</h2>
             </div>
-            <p>Objectively integrate enterprise-wide strategic theme areas with functionalized infrastructures foster collaborative thinking to further. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+            <p data-aos="fade-left" data-aos-duration="1000">
+                Notre équipe dévouée de professionnels de la santé bucco-dentaire est ici pour prendre soin de votre sourire et de votre bien-être oral. Avec des années d'expérience, nous nous engageons à offrir des soins dentaires de la plus haute qualité dans un environnement accueillant et chaleureux.
+            </p>
         </section>
-        <section id="contact-form">
+        <section id="contact-form" data-aos="fade-up" data-aos-duration="1000">
             <aside>
-                <h4>Our location</h4>
-                <span>20280 Mostaqbal</span>
-                <span>Sidi maarouf, Casablanca</span>
-                <h4>Quick contact</h4>
-                <span>Email : moustapha.md26@gmail.com</span>
-                <span>Phone : +212 656 716 530</span>
+                <h4>Où nous trouver ?</h4>
+                <span>122 Boulevard D'anfa, 3ème étage</span>
+                <span>Casablanca, Maroc</span>
+                <h4>Horaires</h4>
+                <table>
+                    <tr><td>Lundi</td><td>09:00–18:00</td></tr>
+                    <tr><td>Mardi</td><td>09:00–18:00</td></tr>
+                    <tr><td>Mercredi</td><td>09:00–18:00</td></tr>
+                    <tr><td>Jeudi</td><td>09:00–18:00</td></tr>
+                    <tr><td>Vendredi</td><td>09:00–18:00</td></tr>
+                    <tr><td>Samdi</td><td>09:00–14:00</td></tr>
+                    <tr><td>Dimanche</td><td>Fermé</td></tr>
+                </table>
                 <div class="info">
-                    We will getback to you within 24 hours, or call us everyday,<br> 10h : 00 - 17h : 00
+                    Un service clientèle est à votre disposition. 
                 </div>
-                <a href="tel:0656716530" class="tel"><i class="fa-solid fa-phone"></i> +212 656 716 530</a><br>
-                <a href="tel:0629511197" class="tel"><i class="fa-solid fa-phone"></i> +212 629 511 197</a>
+                <a href="tel:+212 672 400 405" class="tel"><i class="fa-solid fa-phone"></i> +212 672 400 405</a><br>
             </aside>
             <form action="#">
-                <h3>Book Your Visit</h3>
-                <p>Have an emergency? Do book with us with this simple form below and superior deliverables whereas web-enabled applications. Continually reintermediate integrated processes through technically sound intellectual capital.</p>
+                <h3>Réservez votre visite</h3>
+                <p>Vous avez une urgence? Réservez avec nous avec ce formulaire simple ci-dessous et des livrables supérieurs alors que les applications Web. Réintermédier continuellement les processus intégrés grâce à un capital intellectuel techniquement solide.</p>
                 <div class="input-group">
                     <input type="text" placeholder="Name">
                     <input type="email" placeholder="Email">
@@ -270,7 +278,7 @@
                 <div class="input-group">
                     <input type="text" placeholder="Phone">
                     <select name="industry" id="industry">
-                        <option value="">Choose your Dentist</option>
+                        <option value="">Choisissez votre dentiste</option>
                         <option value="dentist">Mouhamed Ismail</option>
                         <option value="dentist">Sophia Benjelloun</option>
                         <option value="dentist">Abdel Aziz hamed</option>
@@ -280,18 +288,20 @@
                 </div>
                 <textarea name="msg" id="" cols="30" rows="5" placeholder="Additional details"></textarea>
                 <div class="submit-group">
-                    <a type="submit" class="btn">Submit request <i class="fa-solid fa-paper-plane"></i></a>
+                    <a type="submit" class="btn">Soumettre une demande <i class="fa-solid fa-paper-plane"></i></a>
                     <div class="accept">
-                        <input type="checkbox" name="accept" id="accept"><label for="accept">I accept the privacy and terms.</label>
+                        <input type="checkbox" name="accept" id="accept"><label for="accept">J’accepte la confidentialité et les conditions.</label>
                     </div>
                 </div>
             </form>
         </section>
         <section id="team">
-            <span>Sendentist</span>
-            <h2>Specialized Team</h2>
+           <div class="title" data-aos="fade-up" data-aos-duration="1000">
+                <span>Sendentist</span>
+                <h2>Équipe spécialisée</h2>
+           </div>
             <div class="container">
-                <div class="flip-bx">
+                <div class="flip-bx" data-aos="fade-up" data-aos-duration="1000">
                     <div class="front">
                         <img src="./img/team/team-1.jpg" alt="member">
                     </div>
@@ -299,9 +309,9 @@
                         <div class="inner">
                             <div class="content">
                                 <span class="name">
-                                    <a href="#">Mathieu</a>
+                                    <a href="#">Christine Faye</a>
                                 </span>
-                                <span class="position">Consultant</span>
+                                <span class="position">Dentiste généraliste</span>
                                 <ul class="social">
                                     <li>
                                         <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
@@ -317,7 +327,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flip-bx">
+                <div class="flip-bx" data-aos="fade-up" data-aos-duration="1000">
                     <div class="front">
                         <img src="./img/team/team-2.jpg" alt="member">
                     </div>
@@ -325,9 +335,9 @@
                         <div class="inner">
                             <div class="content">
                                 <span class="name">
-                                    <a href="#">Selena</a>
+                                    <a href="#">Robert Fall</a>
                                 </span>
-                                <span class="position">Engineer</span>
+                                <span class="position">Orthodontiste</span>
                                 <ul class="social">
                                     <li>
                                         <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
@@ -343,7 +353,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flip-bx">
+                <div class="flip-bx" data-aos="fade-up" data-aos-duration="1000">
                     <div class="front">
                         <img src="./img/team/team-3.jpg" alt="member ">
                     </div>
@@ -351,9 +361,9 @@
                         <div class="inner ">
                             <div class="content ">
                                 <span class="name ">
-                                    <a href="# ">Raphael</a>
+                                    <a href="# ">Maurice Diouf</a>
                                 </span>
-                                <span class="position ">Expert</span>
+                                <span class="position ">Parodontiste</span>
                                 <ul class="social ">
                                     <li>
                                         <a href="https://www.facebook.com "><i class="fa-brands fa-facebook-f "></i></a>
@@ -369,7 +379,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flip-bx">
+                <div class="flip-bx" data-aos="fade-up" data-aos-duration="1000">
                     <div class="front">
                         <img src="./img/team/team-4.jpg" alt="member ">
                     </div>
@@ -377,9 +387,9 @@
                         <div class="inner ">
                             <div class="content ">
                                 <span class="name ">
-                                    <a href="# ">Victor</a>
+                                    <a href="#">Patrice N'diaye</a>
                                 </span>
-                                <span class="position ">Architect</span>
+                                <span class="position">Hygiéniste dentaire </span>
                                 <ul class="social ">
                                     <li>
                                         <a href="https://www.facebook.com "><i class="fa-brands fa-facebook-f "></i></a>
@@ -398,23 +408,39 @@
             </div>
         </section>
         <section id="testimonial">
-            <div class="title">
-                <span>What our client say ?</span>
-                <h2>Testimony</h2>
-                <p>View what our customers are saying about us to get a better idea of ​​who we are. </p>
-                <br>
-                <a href="#" class="btn">Share your advice <i class="fa-solid fa-circle-chevron-right"></i></a>
+            <div class="title" data-aos="fade-right" data-aos-duration="1000">
+                <span>Ce que dit nos clients ?</span>
+                <h2>Témoignage</h2>
+                <p>Voyez ce que nos patients disent de nous pour avoir une meilleure idée de qui nous sommes. </p>
             </div>
             <div class="testimony">
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="./assets/author.jpg" alt="Image">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic iste similique fuga laborum. Amet aperiam alias ipsa hic, eligendi dolore.</p>
+                            <img src="./img/avis/a-1.png" alt="Image">
+                            <span>Mohamed Hadioui</span>
+                            <p>Je recommande DR Diouf Moustapha a tout ceux qui souhaitent avoir un résultat digne d’un dentiste artiste. <br>
+                                Un  professionnel avec beaucoup d’expérience et cabinet familiale avec une fine pointe de technologie.  Équipe accueillante qui vous recevra à l’heure précise du rdv . Merci pour votre temps et pour votre bon travail .</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./assets/author.jpg" alt="Image">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis distinctio culpa hic quaerat iste quisquam minima id accusamus fugit doloribus!</p>
+                            <img src="./img/avis/a-2.png" alt="Image">
+                            <span>houda Benkirane</span>
+                            <p>Le Dr. Diouf et toute son équipe m'ont vraiment réconcilié avec la profession 😅! Grâce à eux, plus aucune appréhension en allant à mes  rdv, surtout que nous sommes accueillis à  chaque fois chaleureusement et avec la bonne humeur de tout le monde.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/avis/a-3.png" alt="Image">
+                            <span>Judith DESSOLLE</span>
+                            <p>Première visite chez le docteur Diouf. Très satisfaite des soins prodigués. M. Diouf est très rassurant, explique ce qu'il fait, et travaille avec douceur et gentillesse. Aucune douleur. J'y retourne dans un an.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/avis/a-4.png" alt="Image">
+                            <span>Tomi</span>
+                            <p>Moustapha Diouf me soigne depuis plus d’un an. Pour résumer : professionnalisme, excellente maitrise de son métier, équipe très agréable. Ma santé bucco-dentaire est au plus haut point, sans douleurs.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/avis/a-1.png" alt="Image">
+                            <span>Tomi</span>
+                            <p> Le timing est respecté à la minute près, une hygiène et propreté irréprochable, et surtout les soins de grande qualité, qui sont prodigués avec beaucoup de bienveillance. Dr. Diouf était de bons conseils à chaque fois, ce qui m'a permis de retrouver un beau sourire</p>
                         </div>
                     </div>
                 </div>
@@ -425,20 +451,22 @@
                     <!-- <i class="fas fa-chevron-left"></i> -->
                 </div>
             </div>
+            
+            <a href="https://www.google.com/maps/place/Dr+Diouf+Mouhsine+-+Centre+Dentaire+Diouf/@33.591153,-7.6377907,17z/data=!4m8!3m7!1s0xda7d2ecfc7ad733:0xdb73d8173c28d8c5!8m2!3d33.591153!4d-7.6352104!9m1!1b1!16s%2Fg%2F1hdznbd4b?hl=fr&entry=ttu" target="_blank" class="btn">Partagez votre avis <i class="fa-solid fa-circle-chevron-right"></i></a>
         </section>
     </main>
     <footer>
         <div class="map">
-            <div class="title">
+            <div class="title" data-aos="zoom-in" data-aos-duration="1000">
                 <span>Location</span>
-                <h2>Where to find us</h2>
+                <h2>Où nous trouver</h2>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6647.187998399065!2d-7.636170653768081!3d33.58988923068274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d29370178259%3A0x56f4486d1d72b804!2sGAUTHIER%2C%20Casablanca%2020250!5e0!3m2!1sfr!2sma!4v1691161886900!5m2!1sfr!2sma"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.5393202010314!2d-7.635305!3d33.5913085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2ecfc7ad733%3A0xdb73d8173c28d8c5!2sDr%20Diouf%20Mouhsine%20-%20Centre%20Dentaire%20Diouf!5e0!3m2!1sfr!2sma!4v1696492360881!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <div class="bande1">
-            <div class="bloc">
+            <div class="bloc" data-aos="fade-up" data-aos-duration="1000">
                 <img src="./img/logo.svg" alt="logo du site">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, minima.</p>
+                <p>Chez <b>SENDENTIST</b>, nous créons des sourires qui illuminent votre vie.</p>
                 <ul class="social">
                     <li>
                         <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
@@ -451,64 +479,36 @@
                     </li>
                 </ul>
             </div>
-            <div class="bloc">
+            <div class="bloc" data-aos="fade-up" data-aos-duration="1000">
                 <h4>Services</h4>
                 <ul>
-                    <li>
-                        <a href="#">Construction manage</a>
-                    </li>
-                    <li>
-                        <a href="#">Construction Consultants</a>
-                    </li>
-                    <li>
-                        <a href="#">Architecture & Building</a>
-                    </li>
-                    <li>
-                        <a href="#">Home renovations</a>
-                    </li>
-                    <li>
-                        <a href="#">Tiling & painting</a>
-                    </li>
-                    <li>
-                        <a href="#">Interior design</a>
-                    </li>
+                    <li><a href="#">Soins de prévention</a></li>
+                    <li><a href="#">Restaurations dentaires</a></li>
+                    <li><a href="#">Traitements d'orthodontie</a></li>
                 </ul>
             </div>
-            <div class="bloc">
-                <h4>Company</h4>
+            <div class="bloc" data-aos="fade-up" data-aos-duration="1000">
+                <h4>Liens rapides</h4>
                 <ul>
-                    <li>
-                        <a href="#">About us</a>
-                    </li>
-                    <li>
-                        <a href="#">Meet our team</a>
-                    </li>
-                    <li>
-                        <a href="#">News & media</a>
-                    </li>
-                    <li>
-                        <a href="#">Case studies</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">Careers</a>
-                    </li>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Le cabinet</a></li>
+                    <li><a href="#">Nos services</a></li>
+                    <li><a href="#">Galerie photos</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-            <div class="bloc">
+            <div class="bloc" data-aos="fade-up" data-aos-duration="1000">
                 <h4>Newsletter</h4>
-                <p>Sign up for industry alert, thoughts and insights from Sendentist</p>
+                <p>Inscrivez-vous aux alertes de l’industrie, aux réflexions et aux idées de <b>SENDENTIST</b></p>
                 <form action="#">
                     <input type="text" name="newsletter" placeholder="Your email">
                     <i class="fa-solid fa-circle-chevron-right"></i>
                 </form>
-                <p>Have a question ? <b>click here</b></p>
+                <p>Une question ? <b>clickez ici</b></p>
             </div>
         </div>
         <div class="bande2">
-            <p>Terms & Conditions - Privacy Policy - Sitemap</p>
+            <p>Termes et conditions - Politique de confidentialité - Sitemap</p>
             <p>@2023 Sendentist, by <b>DCS</b> with <i class="fa-solid fa-heart"></i></p>
         </div>
     </footer>
@@ -543,6 +543,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js "></script>
     <script type="module ">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js' ;
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
     <script>
         const swiper = new Swiper('.swiper', {

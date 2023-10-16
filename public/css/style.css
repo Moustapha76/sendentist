@@ -17,6 +17,53 @@
     box-sizing: border-box;
 }
 
+.title {
+    position: relative;
+}
+
+section#testimonial .title {
+    text-align: center;
+}
+
+.title span {
+    color: var(--color1);
+    font-weight: bold;
+    text-align: center;
+}
+
+#team .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    border: 1px solid #eeeeee4f;
+    padding: 20px;
+    opacity: .5;
+    width: 100%;
+}
+
+table tr {
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+table tr td {
+    text-align: left;
+    width: 100%;
+    letter-spacing: .5px;
+}
+
+.accept {
+    display: flex;
+    align-items: center;
+}
+
 section#about .container .content li {
     font-size: 20px;
     color: var(--color1);
@@ -183,25 +230,28 @@ select:focus {
 
 .submit-group {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     grid-gap: 30px;
     margin-top: 15px;
+    width: 100%;
 }
 
 .submit-group .btn {
     border: 1px solid #4f4f4f61;
     border-radius: 0;
-    padding: 15px 20px;
+    padding: 10px 20px;
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 16px;
     background: transparent;
     color: var(--hover);
     border-radius: var(--radius);
+    width: max-content;
 }
 
 .submit-group label {
-    margin-left: 15px;
+    margin-left: 10px;
+    font-size: 12px;
 }
 
 form {
@@ -281,14 +331,15 @@ form p {
 section#contact-form aside .info {
     padding: 40px 0;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
+    opacity: .5;
 }
 
 .img-bloc img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: left;
+    object-fit: cover;
+    object-position: right;
 }
 
 #hero .img-bloc img {
@@ -306,8 +357,12 @@ section#contact-form aside .info {
     gap: 5px;
 }
 
+.twin-contact span {
+    font-size: 14px;
+}
+
 .twin-contact b {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 main {
@@ -391,7 +446,7 @@ ul.menu-list li {
 
 .btn i {
     padding-left: 10px;
-    font-size: 17px;
+    font-size: 16px;
     transition: all .3s linear;
 }
 
@@ -411,8 +466,23 @@ body {
     font-family: var(--font);
     overflow-x: hidden;
     color: var(--color2);
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1px;
+}
+
+section#testimonial .testimony .swiper-slide p {
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.content {
+    text-align: justify;
+    line-height: 1.7;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 header {
@@ -421,10 +491,11 @@ header {
     align-items: center;
     position: relative;
     top: 0px;
-    height: 100vh;
+    height: 540px;
     width: 100%;
     left: 0px;
 }
+header.home{height: 100vh;}
 
 ul.menu-list {
     position: relative;
@@ -581,7 +652,7 @@ header nav.navbar-mobile ul li:hover a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 65vh;
+    height: 540px;
     top: 0;
 }
 
@@ -599,17 +670,19 @@ header.service {
 
 .banner.interne .item h1 {
     position: relative;
-    font-size: 6rem;
+    font-size: 4em;
     line-height: 1;
 }
 
 .banner.interne .item {
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
-    padding-left: 10%;
     font-weight: 100;
     color: var(--color0);
     z-index: 1;
+    text-align: left;
+    width: 100%;
+    padding-left: 10%;
 }
 
 .banner.interne img {
@@ -617,7 +690,7 @@ header.service {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
 }
 
 .slideshow {
@@ -728,10 +801,10 @@ header.service {
 }
 
 .slideshow-text {
-    position: absolute;
-    top: 50vh;
+    position: relative;
+    top: 50%;
+    transform: translateY(10%);
     left: 0%;
-    transform: translate(0%, -50%);
     z-index: 100;
     font-size: 40px;
     width: 60vw;
@@ -750,7 +823,7 @@ header.service {
     padding: 0px;
     margin: 0px;
     line-height: 1;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .slideshow-text span {
@@ -813,7 +886,7 @@ main {
 
 section {
     position: relative;
-    padding: 2% 0%;
+    padding: 4% 0%;
     margin: 0% 10%;
     z-index: 1;
 }
@@ -922,13 +995,16 @@ section#service-list {
 
 section#testimonial {
     display: flex;
-    grid-gap: 10%;
     padding: 5% 10%;
     background: url(../../assets/testimony.jpg);
     margin: 5% 0 0;
     background-color: #343434b0;
     background-blend-mode: soft-light;
     background-attachment: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
 
 section#testimonial .swiper-button-next:after,
@@ -942,7 +1018,7 @@ section#testimonial .testimony {
     background: #ffffff1a;
     padding: 2% 10% 4%;
     position: relative;
-    width: 50%;
+    width: 80%;
     font-size: 18px;
     text-align: center;
     backdrop-filter: blur(10px);
@@ -951,11 +1027,19 @@ section#testimonial .testimony {
     font-weight: 100;
 }
 
+section#testimonial .testimony .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: c;
+    gap: 0px;
+}
+
 section#testimonial .testimony:before {
     content: "";
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     background: url(../../assets/q.png);
     left: 100px;
     top: 0%;
@@ -1023,7 +1107,7 @@ section#team .container {
 }
 
 section#team h2 {
-    font-size: 48px;
+    font-size: 50px;
 }
 
 section#about {
@@ -1034,6 +1118,11 @@ section#about {
     padding: 0% 0% 8%;
 }
 
+section#about .img-bloc img {
+    width: 80%;
+    object-fit: contain;
+}
+
 section#about.company {
     padding: 8% 5%;
     margin: 0 5%;
@@ -1041,25 +1130,16 @@ section#about.company {
 
 section#about .img-bloc {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section#about .container {
     display: flex;
     flex-direction: column;
-    grid-gap: 10px;
+    grid-gap: 25px;
     align-items: flex-start;
-}
-
-section#about .jumbotron {
-    box-shadow: 1px 1px 40px #3d3d3d1c;
-    padding: 25px;
-    display: flex;
-    grid-gap: 20px;
-}
-
-section#about .jumbotron i {
-    color: var(--color1);
-    font-size: 25px;
 }
 
 section#about ul {
@@ -1097,27 +1177,14 @@ section#about .title span,
 section#testimonial .title span {
     color: var(--color1);
     font-weight: 900;
-    padding-left: 70px;
     position: relative;
-}
-
-section#about .title span:before,
-section#testimonial .title span:before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 2px;
-    background: var(--color1);
-    left: 0;
-    top: 50%;
-    transform: translate(0, -50%);
 }
 
 section#contact-form {
     position: relative;
     box-shadow: 1px 1px 50px #0000001c;
-    margin: 0 15%;
-    top: -100px;
+    margin: 0 12%;
+    top: -180px;
     background: #ffffff;
     display: flex;
     grid-gap: 0px;
@@ -1134,8 +1201,7 @@ section#contact-form aside {
 section#contact-form aside a.tel {
     width: fit-content;
     padding: 0;
-    font-size: 20px;
-    font-weight: 100;
+    font-size: 18px;
     letter-spacing: 2px;
 }
 
@@ -1149,17 +1215,18 @@ section#contact-form aside a.tel:hover i {
 section#contact-form aside a.tel i {
     font-size: 12px;
     border: 2px solid #f9480b00;
-    padding: 12px;
+    padding: 10px;
     transition: all .3s linear;
 }
 
 section#contact-form aside span {
     white-space: nowrap;
     font-size: 16px;
+    opacity: .5;
 }
 
 section#contact-form aside h4 {
-    font-size: 23px;
+    font-size: 21px;
     padding: 10px 0;
 }
 
@@ -1240,13 +1307,13 @@ section#hero .container .twin .item b {
 }
 section#contact .title h2,
 section#hero .container .title h2 {
-    font-size: 30px;
+    font-size: 35px;
     line-height: 1.2;
     padding: 20px 0;
 }
 
 section#contact .title h2 {
-    font-size: 5rem;
+    font-size: 40px;
     margin: 0;
     padding-top: 0;
 }
@@ -1397,7 +1464,7 @@ section#accroche {
 }
 section#accroche .twin .item {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     width: 25%;
     grid-gap: 12px;
@@ -1462,13 +1529,12 @@ section#contact {
 }
 
 section#contact p {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--color0);
-    letter-spacing: 2px;
     z-index: 1;
     position: relative;
-    width: 60%;
-    text-align: left;
+    width: 70%;
+    text-align: justify;
 }
 
 section#contact .title {
@@ -1549,9 +1615,12 @@ section#contact h2 {
 }
 
 .flip-bx .back .inner .content span.position {
-    font-size: 13px;
-    letter-spacing: 8px;
+    font-size: 16px;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    white-space: break-spaces;
+    opacity: .5;
+    color: var(--color1);
 }
 
 .flip-bx .back .inner .content span.name a {
@@ -1568,9 +1637,9 @@ ul.social {
     justify-content: center;
     align-items: center;
     grid-gap: 30px;
-    padding: 2px 20px;
-    border-top: 1px solid #ffffff69;
-    border-bottom: 1px solid #ffffff69;
+    padding: 10px 20px;
+    border-top: 1px solid #ffffff2b;
+    border-bottom: 1px solid #ffffff2b;
 }
 
 ul.social a i {
@@ -2108,4 +2177,4 @@ footer .bande1 .bloc form input {
     }
 }
 
-@media screen and (max-width :576px) {}
+@media screen and (max-width : 576px) {} 
